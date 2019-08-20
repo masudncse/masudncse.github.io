@@ -46,7 +46,10 @@
 	2. COMMONS FOR PAGE DESIGN
 	--------------------------------- */
 
-	.section{ padding: 50px 0 0px; }
+	.section{ 
+		padding: 50px 0 0px;
+		border-bottom: none;
+	 }
 
 	.section .heading{ margin-bottom: 30px; }
 
@@ -62,7 +65,7 @@
 	5. PORFOLIO SECTION
 	--------------------------------- */
 
-	.portfolio-section{ padding-bottom: 0; }
+	.portfolio-section{ /* padding-bottom: 0; */ }
 	
 	.portfolio-section .portfolioFilter{ margin: 0px 0 10px; }
 	
