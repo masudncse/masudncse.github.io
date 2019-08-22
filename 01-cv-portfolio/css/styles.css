@@ -387,12 +387,12 @@ header .menu-btn:hover {
     margin-bottom: -70px;
 }
 
-.intro .information > li {
+.intro .information>li {
     display: block;
     margin: 5px 0;
 }
 
-.intro .social-icons > li > a {
+.intro .social-icons>li>a {
     height: 35px;
     line-height: 35px;
     width: 35px;
@@ -405,7 +405,7 @@ header .menu-btn:hover {
     color: #fff;
 }
 
-.intro .social-icons > li > a:after {
+.intro .social-icons>li>a:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -421,7 +421,7 @@ header .menu-btn:hover {
     transform: scale(0);
 }
 
-.intro .social-icons > li > a:hover:after {
+.intro .social-icons>li>a:hover:after {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
@@ -462,7 +462,7 @@ header .menu-btn:hover {
     overflow: hidden;
 }
 
-.portfolio-section .p-item .item-box > .p-overly {
+.portfolio-section .p-item .item-box>.p-overly {
     position: absolute;
     left: 0%;
     top: -100%;
@@ -482,7 +482,7 @@ header .menu-btn:hover {
     transition-timing-function: cubic-bezier(.17, .67, .8, .3);
 }
 
-.portfolio-section .p-item .item-box:hover > .p-overly {
+.portfolio-section .p-item .item-box:hover>.p-overly {
     opacity: 1;
     top: 0%;
 }
@@ -556,14 +556,14 @@ header .menu-btn:hover {
     color: #fff;
 }
 
-.experience .list > li {
+.experience .list>li {
     display: block;
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
 }
 
-.experience .list > li:before {
+.experience .list>li:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -615,17 +615,22 @@ header .menu-btn:hover {
 8. TECHNICAL SKILL SECTION
 --------------------------------- */
 
-.skill-section {
+.skill-section {}
 
+.skill-section dl {
+    margin-bottom: 0;
 }
 
-.skill-section dl{
+.skill-section dl dt {
+    color: #f44336;
 }
-.skill-section dl dt{}
-.skill-section dl dd{
-    margin-left: 15px;
+
+.skill-section dl dd {
+    margin-top: 0.2rem;
+    margin-left: 1rem;
 }
-.skill-section dl dd:before{
+
+.skill-section dl dd:before {
     content: '- ';
 }
 
@@ -810,7 +815,7 @@ header .menu-btn:hover {
     border-bottom: none;
 }
 
-.contact-section .form-control{
+.contact-section .form-control {
     border-radius: 3px;
     font-size: 13px;
     height: auto;
@@ -840,4 +845,3 @@ header .menu-btn:hover {
     padding: 30px 0;
     background: #28023D;
 }
-
