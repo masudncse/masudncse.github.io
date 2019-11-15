@@ -138,7 +138,7 @@ button:active,
 button:hover,
 a b.light-color:hover {
     text-decoration: none;
-    color: #FFA804;
+    color: #39667a;
 }
 
 b {
@@ -233,11 +233,15 @@ b.max-bold {
     border-radius: 5px;
     margin-bottom: 20px;
     display: block;
-    background: #FFA804;
+    background: #39667a;
 }
 
 .margin-t-10 {
     margin-top: 10px;
+}
+
+.margin-b-20 {
+    margin-bottom: 20px;
 }
 
 .margin-b-30 {
@@ -254,7 +258,11 @@ b.max-bold {
 }
 
 .font-yellow {
-    color: #FFA600;
+    color: #39667a;
+}
+
+.font-red {
+    color: #d9534f;
 }
 
 .font-semi-white {
@@ -264,6 +272,7 @@ b.max-bold {
 .font-lite-black {
     color: #999;
 }
+
 
 /* ---------------------------------
 3. HEADER
@@ -280,7 +289,7 @@ header {
 header .heading-wrapper {
     border-radius: 5px;
     padding: 30px 40px 20px;
-    background: #e91e63d4;
+    background: #31708fba;
     color: #fff;
 }
 
@@ -302,8 +311,8 @@ header .downlad-btn {
     border-radius: 4px;
     float: right;
     margin-top: 30px;
-    box-shadow: inset 0 0px 4px rgba(0, 0, 0, .3);
-    background: #FFAD01;
+    /* box-shadow: inset 0 0px 4px rgba(0, 0, 0, .3); */
+    background: #31708fba;
     color: #fff;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -320,8 +329,8 @@ header .menu-btn {
     float: right;
     margin-top: 30px;
     margin-right: 10px;
-    box-shadow: inset 0 0px 4px rgba(0, 0, 0, .3);
-    background: #ffad01;
+    /* box-shadow: inset 0 0px 4px rgba(0, 0, 0, .3); */
+    background: #31708fba;
     color: #fff;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -345,7 +354,7 @@ header .menu-btn:hover {
     background-size: cover;
     z-index: 1;
     /* background-image: url(../../images/slider-1-1920x1080.jpg); */
-    background-image: url('https://fbcd.co/product-lg/54c617258b3bd4a9ec5d5615acdf2a13_resize.jpg');
+    background-image: url('https://www.rhitten.com/rhites/img/118628765600433--web-design-portfolio-background.jpg');
 }
 
 .intro-section:before {
@@ -373,6 +382,7 @@ header .menu-btn:hover {
 .intro {
     padding: 0 20px;
     margin-top: 100px;
+    padding-bottom: 60px;
     text-align: center;
     background: #fff;
 }
@@ -415,7 +425,7 @@ header .menu-btn:hover {
     top: 0;
     z-index: -1;
     border-radius: 20px;
-    background: #FFA804;
+    background: #d9534f;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     -webkit-transform: scale(0);
@@ -433,6 +443,8 @@ header .menu-btn:hover {
 
 .portfolio-section {
     /* padding-bottom: 0; */
+    background: #eceeef8c;
+    border-bottom: none;
 }
 
 .portfolio-section .portfolioFilter {
@@ -444,7 +456,7 @@ header .menu-btn:hover {
 }
 
 .portfolio-section .portfolioFilter a.current {
-    color: #FFA804;
+    color: #d9534f;
 }
 
 .portfolio-section .portfolioContainer {
@@ -501,7 +513,7 @@ header .menu-btn:hover {
 }
 
 .portfolio-section .p-item .item-box .p-overly a:hover {
-    color: #FFA804;
+    color: #39667a;
 }
 
 .portfolio-section .p-item.p-item-2 .img:first-child {
@@ -553,8 +565,9 @@ header .menu-btn:hover {
 --------------------------------- */
 
 .experience-section {
-    background: #28023D;
-    color: #fff;
+    /* background: #eceeef8c; */
+    color: #000;
+    border-bottom: none;
 }
 
 .experience .list>li {
@@ -580,6 +593,10 @@ header .menu-btn:hover {
 /* ---------------------------------
 8. EDUCATION SECTION
 --------------------------------- */
+.education-section{
+    background: #eceeef8c;
+    border-bottom: none;
+}
 
 .education-wrapper {
     position: relative;
@@ -608,22 +625,33 @@ header .menu-btn:hover {
     height: 16px;
     border-radius: 10px;
     z-index: 1;
-    box-shadow: 0 0 0 8px rgba(255, 171, 0, .4);
-    background: #FFAB00;
+    box-shadow: 0 0 0 8px rgba(217, 83, 79, 0.2);
+    background: #d9534f;
 }
 
 /* ---------------------------------
 8. TECHNICAL SKILL SECTION
 --------------------------------- */
 
-.skill-section {}
+.skill-section {
+    background: #eceeef8c;
+    border-bottom: none;
+}
 
 .skill-section dl {
     margin-bottom: 0;
+    margin-left: 20px;
+    border-left: 4px solid #39677b;
+    padding-left: 15px;
+    border-radius: 18px;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .skill-section dl dt {
-    color: #f44336;
+    color: #d9534f;
+    text-transform: uppercase;
 }
 
 .skill-section dl dd {
@@ -636,13 +664,21 @@ header .menu-btn:hover {
 }
 
 /* ---------------------------------
+8. ABOUT SECTION
+--------------------------------- */
+.about-section{
+    /* background: #eceeef; */
+    border-bottom: none;
+}
+
+/* ---------------------------------
 8. TRAINING SECTION
 --------------------------------- */
 
 .training-section {
-    background-color: #636c72;
+    /* background-color: #636c72; */
     border-bottom: none;
-    color: #fff;
+    color: #000;
 }
 
 .training-wrapper {
@@ -676,8 +712,8 @@ header .menu-btn:hover {
     height: 16px;
     border-radius: 10px;
     z-index: 1;
-    box-shadow: 0 0 0 8px rgba(255, 171, 0, .4);
-    background: #FFAB00;
+    box-shadow: 0 0 0 8px rgba(217, 83, 79, 0.2);
+    background: #d9534f;
 }
 
 /* ---------------------------------
@@ -747,8 +783,8 @@ header .menu-btn:hover {
     padding: 100px 0 70px;
     background-size: cover;
     z-index: 1;
-    background-image: url(../../images/slider-2-1920x600.jpg);
-    color: #fff;
+    background-image: url('http://www.creativeplace.co.za/wp-content/uploads/2019/01/contact-us-copy-copy-1.png');
+    color: #d6373b;
 }
 
 .counter-section:after {
@@ -759,7 +795,7 @@ header .menu-btn:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .15);
 }
 
 .counter {
@@ -828,6 +864,16 @@ header .menu-btn:hover {
     box-shadow: none;
 }
 
+.contact-section .submit-button{
+        padding: 15px 30px;
+        border-radius: 4px;
+        box-shadow: none;
+        background: #39677b;
+        color: #fff;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+}
+
 /* ---------------------------------
 10. MAP SECTION
 --------------------------------- */
@@ -835,6 +881,7 @@ header .menu-btn:hover {
 .map-section {
     padding-bottom: 0;
     padding-top: 0;
+    margin-top: 50px;
 }
 
 /* ---------------------------------
@@ -844,5 +891,6 @@ header .menu-btn:hover {
 .copyright {
     text-align: center;
     padding: 30px 0;
-    background: #28023D;
+    background: #39687d;
+    color: #fff;
 }
