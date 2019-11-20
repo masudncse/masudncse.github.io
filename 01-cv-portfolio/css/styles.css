@@ -439,6 +439,7 @@ header .menu-btn:hover {
 
 /* ---------------------------------
 5. PORFOLIO SECTION
+   https://stackoverflow.com/questions/46670778/how-to-scroll-to-the-bottom-of-an-image-on-hover
 --------------------------------- */
 
 .portfolio-section {
@@ -473,6 +474,17 @@ header .menu-btn:hover {
 .portfolio-section .p-item .item-box {
     position: relative;
     overflow: hidden;
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    background: #31708fba;
+}
+
+.portfolio-section .p-item .item-box>img {
+    transition: all 10000ms ease-out;
+}
+.portfolio-section .p-item .item-box:hover>img {
+    transform: translateY(-100%);
 }
 
 .portfolio-section .p-item .item-box>.p-overly {
@@ -491,7 +503,7 @@ header .menu-btn:hover {
     opacity: 0;
     -webkit-transition-property: all;
     transition-property: all;
-    transition-duration: 1s;
+    /* transition-duration: 300ms; */
     transition-timing-function: cubic-bezier(.17, .67, .8, .3);
 }
 
@@ -509,11 +521,11 @@ header .menu-btn:hover {
     display: inline-flex;
     margin: 0 7px;
     transition: all 0.3s;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .portfolio-section .p-item .item-box .p-overly a:hover {
-    color: #39667a;
+    /* color: #39667a; */
 }
 
 .portfolio-section .p-item.p-item-2 .img:first-child {

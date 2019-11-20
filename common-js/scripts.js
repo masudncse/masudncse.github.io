@@ -1,6 +1,9 @@
 (function($) {
   ("use strict");
 
+  // MAGNIFIC POPUP
+  $('.image-link').magnificPopup({ type: 'image' });
+
   // LINE PROGRESS BAR
   enableLineProgress();
 
