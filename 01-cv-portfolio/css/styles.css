@@ -478,10 +478,12 @@ header .menu-btn:hover {
     width: 100%;
     overflow: hidden;
     background: #31708fba;
+    border: 1px solid #ddd;
+    box-shadow: 1px 4px 8px -5px;
 }
 
 .portfolio-section .p-item .item-box>img {
-    transition: all 10000ms ease-out;
+    transition: all 20000ms ease-out;
 }
 .portfolio-section .p-item .item-box:hover>img {
     transform: translateY(-100%);
@@ -522,10 +524,6 @@ header .menu-btn:hover {
     margin: 0 7px;
     transition: all 0.3s;
     /* color: #fff; */
-}
-
-.portfolio-section .p-item .item-box .p-overly a:hover {
-    /* color: #39667a; */
 }
 
 .portfolio-section .p-item.p-item-2 .img:first-child {
