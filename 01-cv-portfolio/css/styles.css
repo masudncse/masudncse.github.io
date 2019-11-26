@@ -469,6 +469,13 @@ header .menu-btn:hover {
     width: 33.333%;
     padding: 0 7.5px;
     margin-bottom: 15px;
+    float: left;
+    display: none;
+}
+
+.portfolio-section .p-item::after{
+    content: "";
+    clear: both;
 }
 
 .portfolio-section .p-item .item-box {
