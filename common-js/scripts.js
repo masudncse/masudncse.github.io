@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   ("use strict");
 
   // MAGNIFIC POPUP
-  $('.image-link').magnificPopup({ type: 'image' });
+  $(".image-link").magnificPopup({ type: "image" });
 
   // LINE PROGRESS BAR
   enableLineProgress();
@@ -13,20 +13,20 @@
   // ACCORDIAN
   panelAccordian();
 
-  $('a[href="#"]').on("click", function(event) {
+  $('a[href="#"]').on("click", function (event) {
     return;
   });
 
-  setTimeout(function() {
+  setTimeout(function () {
     $(".navigation-section").css("display", "flex");
   }, 500);
 
-  $(".toggleBtn").on("click", function(event) {
+  $(".toggleBtn").on("click", function (event) {
     $(".navigation-section").toggleClass("toggleClass");
   });
 
   // Add smooth scrolling to all links
-  $(".nav-link").on("click", function(event) {
+  $(".nav-link").on("click", function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -39,10 +39,10 @@
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top,
         },
         800,
-        function() {
+        function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
@@ -60,21 +60,21 @@
 
   countCounterUp = enableCounterUp(countCounterUp);
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     countCounterUp = enableCounterUp(countCounterUp);
   });
 })(jQuery);
 
 function panelAccordian() {
   var panelTitle = $(".panel-title");
-  panelTitle.on("click", function() {
+  panelTitle.on("click", function () {
     $(".panel-title").removeClass("active");
     $(this).toggleClass("active");
   });
 }
 
 function enableRadialProgress() {
-  $(".radial-progress").each(function() {
+  $(".radial-progress").each(function () {
     var $this = $(this),
       progPercent = $this.data("prog-percent");
 
@@ -88,7 +88,7 @@ function enableRadialProgress() {
       from: { color: "#aaa", width: 1 },
       to: { color: "#FEAE01", width: 3 },
       // Set default step function for all animate calls
-      step: function(state, circle) {
+      step: function (state, circle) {
         circle.path.setAttribute("stroke", state.color);
         circle.path.setAttribute("stroke-width", state.width);
 
@@ -98,11 +98,11 @@ function enableRadialProgress() {
         } else {
           circle.setText(value);
         }
-      }
+      },
     });
 
     $(this).waypoint(
-      function() {
+      function () {
         bar.animate(progPercent);
       },
       { offset: "90%" }
@@ -111,7 +111,7 @@ function enableRadialProgress() {
 }
 
 function enableLineProgress() {
-  $(".line-progress").each(function() {
+  $(".line-progress").each(function () {
     var $this = $(this),
       progPercent = $this.data("prog-percent");
 
@@ -124,17 +124,17 @@ function enableLineProgress() {
       trailWidth: 1,
       svgStyle: { width: "100%", height: "100%" },
       text: {
-        style: {}
+        style: {},
       },
       from: { color: "#FFEA82" },
       to: { color: "#ED6A5A" },
       step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + " %");
-      }
+      },
     });
 
     $(this).waypoint(
-      function() {
+      function () {
         bar.animate(progPercent);
       },
       { offset: "90%" }
@@ -153,25 +153,25 @@ function enableCounterUp(a) {
 
   var oTop = $("#counter").offset().top - window.innerHeight;
   if (a == 0 && $(window).scrollTop() > oTop) {
-    $(".counter-value").each(function() {
+    $(".counter-value").each(function () {
       var $this = $(this),
         countDuration = $this.data("duration"),
         countTo = $this.attr("data-count");
       $({
-        countNum: $this.text()
+        countNum: $this.text(),
       }).animate(
         {
-          countNum: countTo
+          countNum: countTo,
         },
         {
           duration: countDuration,
           easing: "swing",
-          step: function() {
+          step: function () {
             $this.text(Math.floor(this.countNum));
           },
-          complete: function() {
+          complete: function () {
             $this.text(this.countNum);
-          }
+          },
         }
       );
     });
@@ -189,27 +189,30 @@ function isExists(elem) {
 }
 
 // filter
-$(function(){
-  $('.portfolioFilter > a').on('click', function(e){
+$(function () {
+  $(".portfolioFilter > a").on("click", function (e) {
     e.preventDefault();
     $("#portfolio .p-item").hide();
-    $($(this).first().data('filter')).each(function(){
+    $($(this).first().data("filter")).each(function () {
       $(this).slideDown();
-    })
+    });
   });
 });
 
 // load more
-$(function () {  
-  $("#portfolio .p-item").slice(0, 6).show();
-  $("#loadMore").on('click', function (e) {
-      e.preventDefault();
-      $("#portfolio .p-item:hidden").slice(0, 3).slideDown();
-      if ($("#portfolio .p-item:hidden").length == 0) {
-          $("#loadMoreContainer").fadeOut('slow');
-      }
-      $('html,body').animate({
-          scrollTop: $(this).offset().top - 220
-      }, 1500);
+$(function () {
+  $("#portfolio .p-item").slice(0, 48).show();
+  $("#loadMore").on("click", function (e) {
+    e.preventDefault();
+    $("#portfolio .p-item:hidden").slice(0, 3).slideDown();
+    if ($("#portfolio .p-item:hidden").length == 0) {
+      $("#loadMoreContainer").fadeOut("slow");
+    }
+    $("html,body").animate(
+      {
+        scrollTop: $(this).offset().top - 220,
+      },
+      1500
+    );
   });
 });

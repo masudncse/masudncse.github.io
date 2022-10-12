@@ -213,6 +213,57 @@ b.max-bold {
     color: #fff;
 }
 
+.link-btn{
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    border: 1px solid #000000;
+}
+
+.link-btn:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+dd .link-btn{
+    margin-right: 4px;
+    margin-bottom: 7px;
+}
+
+.bg-woocommerce{
+    background-color: #8053b4 !important;
+}
+
+.bg-laravel{
+    background-color: rgb(255 41 26) !important;
+}
+
+.bg-wordpress{
+    background-color: rgb(32 113 149 / 1) !important;
+}
+
+.bg-nodejs{
+    background-color: rgb(139 191 61) !important;
+}
+
+.bg-reactjs{
+    background-color: rgb(94 211 243) !important;
+}
+
+.bg-codeigniter{
+    background-color: rgb(231 65 34) !important;
+}
+
+.bg-php{
+    background-color: rgb(105 122 177) !important;
+}
+
+.bg-html{
+    background-color: rgb(221 75 37) !important;
+}
+
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
@@ -465,8 +516,23 @@ header .menu-btn:hover {
     margin-right: -15px;
 }
 
+.portfolio-section .portfolioContainer .special {
+    display: block;
+    position: absolute;
+    left: -90px;
+    top: 10%;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    padding: 2px 5px;
+    background: var(--orange);
+    color: #fff;
+    width: 100%;
+    z-index: 99;
+}
+
 .portfolio-section .p-item {
-    width: 33.333%;
+    width: 25%;
     padding: 0 7.5px;
     margin-bottom: 15px;
     float: left;
@@ -481,7 +547,7 @@ header .menu-btn:hover {
 .portfolio-section .p-item .item-box {
     position: relative;
     overflow: hidden;
-    height: 220px;
+    height: 295px;
     width: 100%;
     overflow: hidden;
     background: #31708fba;
@@ -524,6 +590,10 @@ header .menu-btn:hover {
 .portfolio-section .p-item .item-box .p-overly h4,
 .portfolio-section .p-item .item-box .p-overly p {
     color: #ccc;
+}
+
+.portfolio-section .p-item .item-box .p-overly p span {
+    font-size: 15px;
 }
 
 .portfolio-section .p-item .item-box .p-overly a {
@@ -657,8 +727,9 @@ header .menu-btn:hover {
 
 .skill-section dl {
     margin-bottom: 0;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     border-left: 4px solid #39677b;
+    border-right: 4px solid #39677b;
     padding-left: 15px;
     border-radius: 18px;
     margin-top: 10px;
