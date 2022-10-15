@@ -201,10 +201,11 @@ $(function () {
 
 // load more
 $(function () {
-  $("#portfolio .p-item").slice(0, 48).show();
+  $("#portfolio .p-item").slice(0, 16).show();
+
   $("#loadMore").on("click", function (e) {
     e.preventDefault();
-    $("#portfolio .p-item:hidden").slice(0, 3).slideDown();
+    $("#portfolio .p-item:hidden").slice(0, 4).slideDown();
     if ($("#portfolio .p-item:hidden").length == 0) {
       $("#loadMoreContainer").fadeOut("slow");
     }
