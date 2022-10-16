@@ -512,7 +512,8 @@ header .menu-btn:hover {
 }
 
 .portfolio-section .portfolioFilter {
-    margin-top: 60px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .portfolio-section .portfolioFilter a {
