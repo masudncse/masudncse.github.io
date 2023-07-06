@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/trustboi/public_html/masud.trustboilerhouse.com/
+    - /bin/cp * $DEPLOYPATH
